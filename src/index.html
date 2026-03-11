@@ -1,233 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Belleza&family=Outfit:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/queries.css" />
-    <script src="/js/main.js" type="module"></script>
-    <script src="/js/newsletter.js" type="module"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-    ></script>
-    <title>GB Fashionista | Home</title>
-  </head>
-  <body>
-    <header class="header"></header>
-    <main>
-      <section class="section-hero">
-        <div class="hero">
-          <div class="hero-text-box">
-            <h1 class="heading-primary">Unleash your inner fashionista</h1>
-            <p class="hero-description">
-              Big brands understand the importance of positioning themselves in
-              a way that appeals to their customers. We understand that
-              conformity is not your lifestyle.
-            </p>
-            <a href="/product-list/" class="btn btn--full">Make your choice</a>
-          </div>
-          <div class="hero-img-box">
-            <!-- Dynamic image goes here -->
-          </div>
-        </div>
-      </section>
 
-      <section class="featured-products products">
-        <h2 class="heading">Featured Products</h2>
-        <div class="product-list container-md grid grid--2-cols grid--4-cols">
-          <div class="product-card">
-            <a
-              href="product_pages/index.html?product=2&&category=men&#39;s%20clothing"
-            >
-              <img
-                class="product-img"
-                src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
-                alt="Mens Casual Premium Slim Fit T-Shirts"
-              />
-              <h2 class="card__name">Mens Casual Premium Slim Fit T-Shirts</h2>
-              <p class="product-card__price">$22.30</p></a
-            >
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/queries.css" />
+  <script src="/js/main.js" type="module"></script>
+  <script src="/js/newsletter.js" type="module"></script>
+  <script src="/js/product-featured.js" type="module"></script>
+  <script src="/js/product-category.js" type="module"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+  <title>GB Fashionista | Home</title>
+</head>
 
-          <div class="product-card">
-            <a
-              href="product_pages/index.html?category=men&#39;s%20clothing&&product=1"
-            >
-              <img
-                class="product-img"
-                src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
-                alt="Foldsack No. 1 Backpac"
-              />
-              <h2 class="card__name">
-                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
-              </h2>
-              <p class="product-card__price">$109.95</p></a
-            >
-          </div>
-
-          <div class="product-card">
-            <a
-              href="product_pages/index.html?category=women&#39;s%20clothing&&product=15"
-            >
-              <img
-                class="product-img"
-                src="https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg"
-                alt="BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats"
-              />
-              <h2 class="card__name">
-                BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats
-              </h2>
-              <p class="product-card__price">$56.99</p></a
-            >
-          </div>
-
-          <div class="product-card">
-            <a
-              href="product_pages/index.html?category=women&#39;s%20clothing&&product=18"
-            >
-              <img
-                class="product-img"
-                src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg"
-                alt="MBJ Women's Solid Short Sleeve Boat Neck V"
-              />
-              <h2 class="card__name">
-                MBJ Women's Solid Short Sleeve Boat Neck V
-              </h2>
-              <p class="product-card__price">$9.85</p></a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- The Modal -->
-      <div id="newsLetterModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content-newsletter">
-          <span class="close">&times;</span>
-          <p class="newsletter-thanks">
-            <!--Modal message -->
+<body>
+  <header class="header"></header>
+  <main>
+    <section class="section-hero">
+      <div class="hero">
+        <div class="hero-text-box">
+          <h1 class="heading-primary">Unleash your inner fashionista</h1>
+          <p class="hero-description">
+            Big brands understand the importance of positioning themselves in
+            a way that appeals to their customers. We understand that
+            conformity is not your lifestyle.
           </p>
+          <a href="/product-list/" class="btn btn--full">Make your choice</a>
+        </div>
+        <div class="hero-img-box">
+          <!-- Dynamic image goes here -->
         </div>
       </div>
+    </section>
 
-      <section class="newsletter">
-        <div class="container-md grid grid--2-cols grid--1-col">
-          <div class="signup-details">
-            <h2>Sign Up for newsletters</h2>
-            <p>Get email updates about our latest products and offers.</p>
-          </div>
-          <form class="newsletterForm">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Your Email"
-              class="form-control"
-            />
-            <button class="newsletterBtn" type="submit">Submit</button>
-          </form>
+    <section class="featured-products products">
+      <h2 class="heading dynamic-category-heading">Featured Products</h2>
+      <div class="product-fullList container-md grid grid--2-cols grid--4-cols">
+        <!-- Product list goes here -->
+      </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="newsLetterModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content-newsletter">
+        <span class="close">&times;</span>
+        <p class="newsletter-thanks">
+          <!--Modal message -->
+        </p>
+      </div>
+    </div>
+
+    <section class="newsletter">
+      <div class="container-md grid grid--2-cols grid--1-col">
+        <div class="signup-details">
+          <h2>Sign Up for newsletters</h2>
+          <p>Get email updates about our latest products and offers.</p>
         </div>
-      </section>
+        <form class="newsletterForm">
+          <input type="email" name="email" id="email" placeholder="Your Email" class="form-control" />
+          <button class="newsletterBtn" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
 
-      <section class="products-category products">
-        <h2 class="heading">Product Category</h2>
-        <div class="product-list container-sm grid grid--3-cols">
-          <div class="product-card">
-            <a href="/product-list/index.html?category=men&#39;s%20clothing">
-              <img
-                class="product-img"
-                src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
-                alt="Men's Clothing Category"
-              />
-              <h2 class="card__category">Men's Clothing</h2></a
-            >
-          </div>
+    <section class="products-category products">
+      <h2 class="heading">Product Category</h2>
+      <div class="products-category-list container-sm grid grid--3-cols">
+        <!-- <div class="product-card">
+          <a href="/product-list/index.html?category=men&#39;s%20clothing">
+            <img class="product-img" src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+              alt="Men's Clothing Category" />
+            <h2 class="card__category">Men's Clothing</h2>
+          </a>
+        </div> -->
 
-          <div class="product-card">
-            <a href="/product-list/index.html?category=jewelery">
-              <img
-                class="product-img"
-                src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg"
-                alt="Jewelery Category"
-              />
-              <h2 class="card__category">Jewelery</h2></a
-            >
-          </div>
+        <!-- <div class="product-card">
+          <a href="/product-list/index.html?category=jewelery">
+            <img class="product-img" src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg"
+              alt="Jewelery Category" />
+            <h2 class="card__category">Jewelery</h2>
+          </a>
+        </div> -->
 
-          <div class="product-card">
-            <a href="/product-list/index.html?category=women&#39;s%20clothing">
-              <img
-                class="product-img"
-                src="https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg"
-                alt="Women's Clothing Category"
-              />
-              <h2 class="card__category">Women's Clothing</h2></a
-            >
-          </div>
+        <!-- <div class="product-card">
+          <a href="/product-list/index.html?category=women&#39;s%20clothing">
+            <img class="product-img" src="https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg"
+              alt="Women's Clothing Category" />
+            <h2 class="card__category">Women's Clothing</h2>
+          </a>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Register Modal -->
+    <section class="wrapper-register active" style="display: none">
+      <div class="form-register register">
+        <div class="header-btn-wrapper">
+          <header>Register</header>
+          <span class="registerCloseBtn">&times;</span>
         </div>
-      </section>
+        <form action="#" class="reg-form">
+          <input type="text" id="user-fullname" name="fullName" placeholder="Full Name" required />
+          <input type="email" id="user-email" name="email" placeholder="email" required />
+          <input type="password" id="user-password" name="password" placeholder="password" required />
+          <input type="submit" value="Register" class="registerBtn" />
+        </form>
+      </div>
 
-      <!-- Register Modal -->
-      <section class="wrapper-register active" style="display: none">
-        <div class="form-register register">
-          <div class="header-btn-wrapper">
-            <header>Register</header>
-            <span class="registerCloseBtn">&times;</span>
-          </div>
-          <form action="#" class="reg-form">
-            <input
-              type="text"
-              id="user-fullname"
-              name="fullName"
-              placeholder="Full Name"
-              required
-            />
-            <input
-              type="email"
-              id="user-email"
-              name="email"
-              placeholder="email"
-              required
-            />
-            <input
-              type="password"
-              id="user-password"
-              name="password"
-              placeholder="password"
-              required
-            />
-            <input type="submit" value="Register" class="registerBtn" />
-          </form>
+      <div class="freebie">
+        <div class="header-btn-wrapper">
+          <header>Thank you</header>
+          <span class="ModalCloseBtn">&times;</span>
         </div>
+        <img src="../images/registered.jpg" class="people" alt="group of people" />
+        <p class="reg-thankyou">
+          Great! You have been successfully registered with our website.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"></footer>
+</body>
 
-        <div class="freebie">
-          <div class="header-btn-wrapper">
-            <header>Thank you</header>
-            <span class="ModalCloseBtn">&times;</span>
-          </div>
-          <img
-            src="../images/registered.jpg"
-            class="people"
-            alt="group of people"
-          />
-          <p class="reg-thankyou">
-            Great! You have been successfully registered with our website.
-          </p>
-        </div>
-      </section>
-    </main>
-    <footer class="footer"></footer>
-  </body>
 </html>
